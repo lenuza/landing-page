@@ -1,0 +1,79 @@
+
+html, body {
+    /* background-color: #00131a;
+    background-image: linear-gradient(#ccf2ff, #000); */
+    /* background-repeat: no-repeat; */
+    /* box-sizing: border-box; */
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+section {
+    margin: 0.5em auto;
+}
+
+p {
+    box-sizing: border-box;
+    font-size: 1.5em;
+    padding: 1em;
+    text-align: justify;
+}
+
+/* #section3 p {
+    color: #cff;
+} */
+
+.page-header,
+.page-footer {
+    width: 100%;
+    height: 5em;
+    background-color: #00131a;
+}
+
+.section-content {
+    width: 100%;
+    /* height: 20em; */
+    background-color: rgba(204, 242, 255, 0.2);
+}
+
+.parallax-effect-1,
+.parallax-effect-2,
+.parallax-effect-3,
+.parallax-effect-4 {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.65;
+}
+
+.parallax-effect-1 {
+    background-image: url('../images/stacy-marie-mLx1dc-AJ5k-unsplash.jpg');
+    height: 20em;
+}
+
+.parallax-effect-2 {
+    background-image: url('../images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg');
+    height: 50em;
+}
+
+.parallax-effect-3 {
+    background-image: url('../images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg');
+    height: 50em;
+}
+
+.parallax-effect-4 {
+    background-image: url('../images/alok-shenoy-5xYvAlKjxWY-unsplash.jpg');
+    height: 40em;
+}
