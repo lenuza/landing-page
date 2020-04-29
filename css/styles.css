@@ -28,9 +28,27 @@ p {
     text-align: justify;
 }
 
-/* #section3 p {
-    color: #cff;
-} */
+#navbar-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar-list>li {
+    align-items: stretch;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    width: 100%;
+    background-color: rgb(204, 242, 255);
+    border: 1px solid gold;
+}
 
 .page-header,
 .page-footer {
