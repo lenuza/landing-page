@@ -70,9 +70,12 @@ a {
     background-color: #00131a;
 }
 
-.page-header {
+#navbar {
     position: fixed;
+    width: 100%;
     z-index: 100;
+    top: 0;
+    transition: top 0.3s;
 }
 
 .section-content {

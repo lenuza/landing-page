@@ -21,9 +21,21 @@ for (var i = 0; i < links.length; i++) {
 
    if(active.length > 0) {
       active[0].className = active[0].className.replace('active', '');
-   } else {
-      console.log('hello')
    }
-    this.className += " active";
+
+   this.className += " active";
 });
+}
+
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = () => {
+   var currentScrollPos = window.pageYOffset;
+
+   if (prevScrollpos > currentScrollPos) {
+      document.getElementById('navbar').style.top = '0';
+   } else {
+      document.getElementById('navbar').style.top = '-5em';
+   }
+   prevScrollpos = currentScrollPos;
 }
