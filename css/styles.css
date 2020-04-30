@@ -28,6 +28,10 @@ p {
     text-align: justify;
 }
 
+a {
+    text-decoration: none;
+}
+
 #navbar-list {
     width: 100%;
     display: flex;
@@ -48,6 +52,11 @@ p {
     width: 100%;
     background-color: rgb(204, 242, 255);
     border: 1px solid gold;
+}
+
+#navbar-list>li:active {
+    background-color: #000;
+    color: rgb(204, 242, 255)
 }
 
 .page-header,
