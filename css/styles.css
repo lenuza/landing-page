@@ -116,3 +116,30 @@ a {
     background-image: url('../images/alok-shenoy-5xYvAlKjxWY-unsplash.jpg');
     height: 40em;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    padding: 0.25em;
+    transition: all .25s ease-in-out;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+/*https://getflywheel.com/layout/sticky-back-to-top-button-tutorial/*/

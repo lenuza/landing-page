@@ -39,3 +39,21 @@ window.onscroll = () => {
    }
    prevScrollpos = currentScrollPos;
 }
+
+//show back to top scroll
+
+const scollToTop = document.getElementById('scrollBack');
+
+const backToTop = () => {
+
+   let y = window.scrollY;
+
+   if( y > 0) {
+      scollToTop.className = 'back-to-top show';
+   }
+   else {
+      scollToTop.className = 'back-to-top hide';
+   }
+}
+
+window.addEventListener('scroll', backToTop);
