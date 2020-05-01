@@ -57,3 +57,8 @@ const backToTop = () => {
 }
 
 window.addEventListener('scroll', backToTop);
+
+
+document.getElementById('scrollBack').addEventListener('click', () => {
+   window.scrollTo(0, 0);
+})
