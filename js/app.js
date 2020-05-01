@@ -1,12 +1,14 @@
-var sections = document.getElementsByClassName('section-title');
-var unorderedList = document.getElementById('navbar-list');
+const sections = document.getElementsByClassName('section-title');
+const unorderedList = document.getElementById('navbar-list');
+const links = document.getElementsByClassName('anchor');
+const active = document.getElementsByClassName('active');
+const scollToTop = document.getElementById('scrollBack');
+var prevScrollpos = window.pageYOffset;
 var listItem;
 
-// var active = document.getElementsByClassName('active');
-
-//  dynamically creating havbar list items and anchor elements
+//dynamically creating havbar list items and anchor elements
 for(let i = 0; i < sections.length; i++) {
-   var title = sections[i].innerHTML;
+   const title = sections[i].innerHTML;
    listItem = unorderedList.appendChild(document.createElement('li')).appendChild(document.createElement('a'));
    listItem.innerHTML = title;
    listItem.setAttribute('href', `#${sections[i].id}`);
@@ -14,20 +16,15 @@ for(let i = 0; i < sections.length; i++) {
 }
 
 //adding class active when clicked
-var links = document.getElementsByClassName('anchor');
-for (var i = 0; i < links.length; i++) {
+for (let i = 0; i < links.length; i++) {
    links[i].addEventListener('click', function() {
-   var active = document.getElementsByClassName('active');
 
-   if(active.length > 0) {
-      active[0].className = active[0].className.replace('active', '');
-   }
-
-   this.className += " active";
-});
-}
-
-var prevScrollpos = window.pageYOffset;
+      if(active.length > 0) {
+         active[0].className = active[0].className.replace('active', '');
+      }
+      this.className += " active";
+   });
+};
 
 window.onscroll = () => {
    var currentScrollPos = window.pageYOffset;
@@ -40,12 +37,8 @@ window.onscroll = () => {
    prevScrollpos = currentScrollPos;
 }
 
-//show back to top scroll
-// Using this tuttorial as a guide https://getflywheel.com/layout/sticky-back-to-top-button-tutorial/
-const scollToTop = document.getElementById('scrollBack');
-
+// show back to top scroll, using this tuttorial as a guide https://getflywheel.com/layout/sticky-back-to-top-button-tutorial/
 const backToTop = () => {
-
    let y = window.scrollY;
 
    if( y > 0) {
@@ -57,7 +50,6 @@ const backToTop = () => {
 }
 
 window.addEventListener('scroll', backToTop);
-
 
 document.getElementById('scrollBack').addEventListener('click', () => {
    window.scrollTo(0, 0);
