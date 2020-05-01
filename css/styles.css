@@ -35,8 +35,8 @@ a {
 #navbar-list {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -147,3 +147,18 @@ a {
     opacity: 0;
 }
 /*https://getflywheel.com/layout/sticky-back-to-top-button-tutorial/*/
+
+
+@media screen and (min-width: 1026px) {
+
+    #navbar-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; */
+    }
+}
