@@ -119,18 +119,22 @@ a {
 
 .back-to-top {
     position: fixed;
+    box-sizing: border-box;
     bottom: 0;
     right: 0;
     cursor: pointer;
-    display: inline-flex;
-    width: 80px;
-    height: 80px;
+    display: block;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     margin: 0 3em 3em 0;
     padding: 0.25em;
     transition: all .25s ease-in-out;
+    padding: 1.5em;
+    /* padding-top: 2em; */
+    text-align: center;
 }
 
 .show {
