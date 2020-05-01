@@ -114,6 +114,7 @@ a:hover {
     height: 40em;
 }
 
+/* Used as a guide for back-to-top https://getflywheel.com/layout/sticky-back-to-top-button-tutorial/*/
 .back-to-top {
     position: fixed;
     box-sizing: border-box;
@@ -140,9 +141,6 @@ a:hover {
     visibility: hidden;
     opacity: 0;
 }
-
-/* Used as a guide for back-to-top https://getflywheel.com/layout/sticky-back-to-top-button-tutorial/*/
-
 
 @media screen and (min-width: 1026px) {
 

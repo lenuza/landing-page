@@ -7,7 +7,7 @@ var prevScrollpos = window.pageYOffset;
 var listItem;
 
 //dynamically creating havbar list items and anchor elements
-for(let i = 0; i < sections.length; i++) {
+for (let i = 0; i < sections.length; i++) {
    const title = sections[i].innerHTML;
    listItem = unorderedList.appendChild(document.createElement('li')).appendChild(document.createElement('a'));
    listItem.innerHTML = title;
@@ -19,7 +19,7 @@ for(let i = 0; i < sections.length; i++) {
 for (let i = 0; i < links.length; i++) {
    links[i].addEventListener('click', () => {
 
-      if(active.length > 0) {
+      if (active.length > 0) {
          active[0].className = active[0].className.replace('active', '');
       }
       this.className += " active";
@@ -41,10 +41,9 @@ window.onscroll = () => {
 const backToTop = () => {
    let y = window.scrollY;
 
-   if( y > 0) {
+   if (y > 0) {
       scollToTop.className = 'back-to-top show';
-   }
-   else {
+   } else {
       scollToTop.className = 'back-to-top hide';
    }
 }
