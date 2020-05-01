@@ -17,7 +17,7 @@ for(let i = 0; i < sections.length; i++) {
 
 //adding class active when clicked
 for (let i = 0; i < links.length; i++) {
-   links[i].addEventListener('click', function() {
+   links[i].addEventListener('click', () => {
 
       if(active.length > 0) {
          active[0].className = active[0].className.replace('active', '');
