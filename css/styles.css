@@ -33,7 +33,6 @@ a {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -85,7 +84,6 @@ a:hover {
 .parallax-effect-2,
 .parallax-effect-3,
 .parallax-effect-4 {
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

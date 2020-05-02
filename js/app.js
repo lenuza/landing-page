@@ -5,9 +5,10 @@ const active = document.getElementsByClassName('active');
 const scollToTop = document.getElementById('scrollBack');
 var prevScrollpos = window.pageYOffset;
 var listItem;
+var sectionNum = sections.length;
 
 //dynamically creating havbar list items and anchor elements
-for (let i = 0; i < sections.length; i++) {
+for (let i = 0; i < sectionNum; i++) {
    const title = sections[i].innerHTML;
    listItem = unorderedList.appendChild(document.createElement('li')).appendChild(document.createElement('a'));
    listItem.innerHTML = title;
